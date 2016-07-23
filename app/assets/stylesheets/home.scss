@@ -5,6 +5,7 @@ $orange_yellow: #f59d00;
 $green_blue: #00bd9c;
 $green_gradient_bottom: #3CD3AD;
 $green_gradient_top: #0B8BAD;
+$lato: 'Lato', sans-serif;
 
 //Google Font
 @import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700';
@@ -12,16 +13,14 @@ $green_gradient_top: #0B8BAD;
 /* Sample text styles */
 
 header {
-	font-family: Roboto;
-	font-size: 12px;
-	color: #574751;
+
 }
 
 html {
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: linear-gradient(0deg, $green_gradient_top, $green_gradient_bottom);
+  @include linear-gradient(0deg, $green_gradient_top, $green_gradient_bottom);
 }
 body {
   margin: 0;
@@ -29,15 +28,21 @@ body {
 }
 
 nav {
-  .pageTitle{
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 40px;
-    color: #ffffff;
-    float: left;
+  @include span-columns(12);
+  h1 {
+    .pageTitle{
+      @include span-columns(8);
+      @include shift(3);
+      font-family: $lato;
+      font-weight: 100;
+      font-size: 40px;
+      color: #ffffff;
+      float: left;
+    }
   }
-  .menu {
-    float: right;
+  .menuDiv {
+    @include span-columns(4);
+
   }
 }
 .clear{ clear:left;}

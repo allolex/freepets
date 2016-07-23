@@ -1,11 +1,11 @@
-  <nav><h1 class="pageTitle">Hot Dogs</h1>
-  <%= image_tag("menu.png", class: "menu") %>
-</nav>
-<div class="clear"></div>
-<%= image_tag "sun.png" %>
-
-<%=
-  button_tag(type: "button", id: "report") do
-    content_tag(:strong, "Report")
-  end
-%>
+<div class="wrapper">
+    <nav>
+      <h1 class="pageTitle">Hot Dogs</h1>
+    </nav>
+  <div class="clear"></div>
+  <%= image_tag "sun.png" %>
+  <%=
+    button_tag(type: "button", id: "report") do
+      content_tag(:strong, "Report")
+    end %>
+</div>
