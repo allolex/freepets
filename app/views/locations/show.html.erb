@@ -1,24 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @location.latitude %>
-</p>
+<div id="map">
+  <img src="" id="map-image" />
+<div>
 
-<p>
-  <strong>Longitude:</strong>
-  <%= @location.longitude %>
-</p>
+<div  id="location"
+      data-latitude="<%= @location.latitude %>"
+      data-longitude="<%= @location.longitude %>"
+>
+  <p>
+    <strong>Address:</strong>
+    <%= @location.address %>
+  </p>
+</div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @location.address %>
-</p>
-
-<p>
-  <strong>Google place:</strong>
-  <%= @location.google_place_id %>
-</p>
-
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<%= render partial: "call_info" %>

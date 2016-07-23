@@ -35,24 +35,12 @@ $(function(){
       $('#report').click(function(event) {
         event.preventDefault();
         $.post("/locations", payload, function(){
+          console.log("post response");
           console.dir(arguments);
         });
       });
 
-      var mapUrl = "http://maps.google.com/maps/api/staticmap?";
-      mapUrl = mapUrl + 'center=' + location;
-      mapUrl = mapUrl + '&zoom=15&size=512x512';
-      mapUrl = mapUrl + '&maptype=roadmap&sensor=false';
-      mapUrl = mapUrl + '&markers=color:red|label:Y|' + location;
-      mapUrl = mapUrl + "&key=" + token;
-
       // console.log(mapUrl);
-
-      var addressElement = document.getElementById("address");
-      var imgElement = document.getElementById("static-map");
-
-      addressElement.innerHTML = address;
-      imgElement.src = mapUrl;
     }).fail(function(){
       console.log("Failure");
       console.dir(arguments);
