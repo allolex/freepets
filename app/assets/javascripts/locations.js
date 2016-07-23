@@ -1,6 +1,5 @@
-var token = "AIzaSyAm7jyIIqtaJRJoEOBPLjKF_Bq8iV2KCpM"
-
-$(function(){
+function loadMap() {
+  var token = "AIzaSyAm7jyIIqtaJRJoEOBPLjKF_Bq8iV2KCpM"
   var latitude = $("#location").data("latitude");
   var longitude = $("#location").data("longitude");
 
@@ -16,4 +15,9 @@ $(function(){
   var imgElement = document.getElementById("map-image");
 
   imgElement.src = mapUrl;
+};
+
+$(document).on('turbolinks:load', function() {
+  loadMap();
 });
+
