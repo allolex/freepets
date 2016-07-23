@@ -19,13 +19,19 @@ html {
   @include linear-gradient(0deg, $green_gradient_top, $green_gradient_bottom);
 
 }
+
 body {
   margin: 0;
   background: none;
 }
+
 #home {
   @include outer-container;
-  font-size: 1.2em;
+
+  font-size: 1.8em;
+
+  h1 { font-size: 3em }
+
   nav {
     @include span-columns(12);
     .pageTitle{
