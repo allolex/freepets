@@ -1,3 +1,79 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$orange_yellow: #f59d00;
+$green_blue: #00bd9c;
+$green_gradient_bottom: #3CD3AD;
+$green_gradient_top: #0B8BAD;
+
+
+//Google Font
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700';
+
+/* Sample text styles */
+
+html {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include linear-gradient(0deg, $green_gradient_top, $green_gradient_bottom);
+
+}
+body {
+  margin: 0;
+  background: none;
+}
+#home {
+  @include outer-container;
+  font-size: 1.2em;
+  nav {
+    @include span-columns(12);
+    .pageTitle{
+      @include span-columns(8);
+      @include shift(3);
+      font-family: 'Lato', sans-serif;
+      font-weight: 100;
+      font-size: 40px;
+      color: #ffffff;
+      float: left;
+    }
+  }
+  p, li {
+      font-size: 1.2em;
+  }
+    .subhead {
+      @include span-columns(6);
+      @include shift(3);
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-weight: 100;
+    }
+    .copy {
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+    }
+
+  .clear{ clear:left;}
+  .text-subhead {
+  	font-family: AvenirNext;
+  	font-size: 15px;
+  	font-weight: 200;
+  	text-align: center;
+  	color: #ffffff;
+  }
+
+  .button-label {
+  	font-family: AvenirNext;
+  	font-size: 10px;
+  	text-align: center;
+  	color: #ffffff;
+  }
+
+  .text-small-text {
+  	font-family: AvenirNext;
+  	font-size: 5px;
+  	line-height: 1.5;
+  	color: #4a4a4a;
+  }
+}
