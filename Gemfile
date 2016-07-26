@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails_12factor'
 gem 'bourbon'
 gem 'neat'
+gem 'bitters'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -25,5 +26,3 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
