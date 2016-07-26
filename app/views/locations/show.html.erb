@@ -1,17 +1,18 @@
-<p id="notice"><%= notice %></p>
+<h2>Your current location</h2>
 
 <div id="map">
   <img src="" id="map-image" />
-<div>
+</div>
 
 <div  id="location"
       data-latitude="<%= @location.latitude %>"
       data-longitude="<%= @location.longitude %>"
->
-  <p>
-    <strong>Address:</strong>
-    <%= @location.address %>
-  </p>
-</div>
+></div>
+
+<h3>Address</h3>
+
+<p id="address">
+  <%= @location.address %>
+</p>
 
 <%= render partial: "call_info" %>
