@@ -1,24 +1,26 @@
-# README
+# Hot Dogs / Free Pets / etc.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was a project for the first [Fort Lauderdale Civic
+Hackathon](http://ftlcivichackathon.com) in July 2016.
 
-Things you may want to cover:
+The goal was to create an informational site about what normal people can do to
+help animals that have been left in cars by their owners. This is something that
+many of us in South Florida have been confronted with. We have an answer, and it
+isn't "do nothing". :wink:
 
-* Ruby version
+The site is deployed here:
 
-* System dependencies
+[freepets.herokuapp.com](http://freepets.herokuapp.com)
 
-* Configuration
+We'd like to thank all the lovely people we met at the hackathon, but
+especially the organizers of Code for Fort Lauderdale: Rob Davis, Ryan Gates,
+and Quyen Tran.
 
-* Database creation
 
-* Database initialization
+## Team
 
-* How to run the test suite
+- Content/Community: Hope Gold
+- Design: [Ryan Stone](https://github.com/ryantstone)
+- Development: [Damon Davison](http://github.com/allolex)
+- Development: Ilkhom Karimov
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
