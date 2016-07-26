@@ -4,6 +4,8 @@
 @import "home";
 @import "locations";
 @import "elements/big-button";
+
+
 @import "refills/accordion-tabs";
 @import "refills/type-system-rounded";
 
@@ -31,8 +33,16 @@ div#wrapper {
 
 div#content {
   text-align: left;
+  @include span-columns(12);
 }
 
 section#call-info {
   font-size: 2em;
+  @include span-columns(10);
+  @include shift(1);
+}
+
+nav {
+  @include span-columns(6);
+  @include shift(3);
 }
