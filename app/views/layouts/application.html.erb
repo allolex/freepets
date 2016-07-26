@@ -6,9 +6,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <%= yield %>
+    <article class="type-system-rounded">
+      <div id="wrapper">
+        <h1 class="site-title">Hot Dogs</h1>
+
+        <%= yield %>
+      </div>
+    </article>
   </body>
 </html>
