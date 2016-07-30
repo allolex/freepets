@@ -1,12 +1,10 @@
 @import "bourbon";
-@import "base/base";
 @import "neat";
+@import "base/base";
 @import "home";
 @import "locations";
 @import "elements/big-button";
 
-
-@import "refills/accordion-tabs";
 @import "refills/type-system-rounded";
 
 $orange_yellow: #f59d00;
@@ -14,35 +12,29 @@ $green_blue: #00bd9c;
 $green_gradient_bottom: #3CD3AD;
 $green_gradient_top: #0B8BAD;
 
-
 html {
-  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   @include linear-gradient(0deg, $green_gradient_top, $green_gradient_bottom);
 }
 
 h1.site-title {
-  font-size: 2em;
+  font-size: 8em;
 }
 
-div#wrapper {
+section#content {
   @include outer-container;
   text-align: center;
 }
 
-div#content {
-  text-align: left;
+article {
   @include span-columns(12);
+  text-align: left;
+  font-size: 3em;
 }
 
-section#call-info {
-  font-size: 2em;
-  @include span-columns(10);
+article > ol {
+  list-style-type: decimal;
+  @include span-columns(11);
   @include shift(1);
-}
-
-nav {
-  @include span-columns(6);
-  @include shift(3);
 }

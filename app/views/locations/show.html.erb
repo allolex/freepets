@@ -1,18 +1,20 @@
-<h2>Your current location</h2>
+<article id="your-location">
+  <h2>Your current location</h2>
 
-<div id="map">
-  <img src="" id="map-image" />
-</div>
+  <div id="map">
+    <img src="" id="map-image" />
+  </div>
 
-<div  id="location"
-      data-latitude="<%= @location.latitude %>"
-      data-longitude="<%= @location.longitude %>"
-></div>
+  <div  id="location"
+        data-latitude="<%= @location.latitude %>"
+        data-longitude="<%= @location.longitude %>"
+  ></div>
 
-<h3>Address</h3>
+  <h3>Address</h3>
 
-<p id="address">
-  <%= @location.address %>
-</p>
+  <p id="address">
+    <%= @location.address %>
+  </p>
+</article>
 
 <%= render partial: "call_info" %>

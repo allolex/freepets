@@ -1,70 +1,27 @@
-<div id="content">
-  <ul class="accordion-tabs">
-    <li class="tab-header-and-content">
-      <a href="javascript:void(0)" class="is-active tab-link">Save pets from heat stroke</a>
-      <div class="tab-content">
-        <h2>Save a pet that has been left in a car</h2>
+<ul class="accordion-tabs">
+  <li class="tab-header-and-content">
+    <a href="javascript:void(0)" class="is-active tab-link">Save a pet</a>
+    <div class="tab-content">
+      <%= render "save_a_pet" %>
+    </div>
+  </li>
 
-        <p>If you do come across a pet in a locked vehicle this is how you can help:</p>
+  <li class="tab-header-and-content">
+    <a href="javascript:void(0)" class="tab-link">Legal Criteria</a>
+    <div class="tab-content">
+      <%= render "criteria" %>
+    </div>
+  </li>
 
-        <ol>
-          <li>Take down the car's make, model and license-plate number.
-          <li>If there are businesses nearby, notify their managers or security guards and ask them to make an announcement to find the car's owner.
-          <li>If the owner can't be found, call the non-emergency number of the local police or animal control and wait by the car for them to arrive. In Florida we know have <a href="https://www.flsenate.gov/Committees/billsummaries/2016/html/1151">HB 131</a> which allows Samaritans to legally remove animals from cars under certain circumstances.
-        </ol>
-      </div>
-    </li>
+  <li class="tab-header-and-content">
+    <a href="javascript:void(0)" class="tab-link">Treating Heat Stroke</a>
+    <div class="tab-content">
+      <%= render "heat_stroke" %>
+    </div>
+  </li>
+</ul>
 
-    <li class="tab-header-and-content">
-      <a href="javascript:void(0)" class="tab-link">Criteria for removal</a>
-      <div class="tab-content">
-        <p>See <a
-          href="https://www.flsenate.gov/Committees/billsummaries/2016/html/1151">the
-          law</a> this list is based on.</p>
-
-        <ol>
-            <li>Check to see if the vehicle is locked.
-            <li>You must have a reasonable belief that the animal is in imminent danger or suffering harm.
-            <li>Ensure law enforcement is notified prior to entering vehicle or immediately thereafter.
-            <li>Use no more force than is necessary.
-            <li>Remain with the animal in a safe location until law enforcement arrives.
-        </ol>
-      </div>
-    </li>
-
-    <li class="tab-header-and-content">
-      <a href="javascript:void(0)" class="tab-link">Heat Stroke</a>
-      <div class="tab-content">
-        <h2>Heat stroke</h2>
-
-        <h3>What to look for</h3>
-
-        <p>Look for signs of heat stress—heavy panting, glazed eyes, a rapid pulse,
-        unsteadiness, a staggering gait, vomiting, or a deep red or purple tongue.</p>
-
-        <h3>What to do</h3>
-
-        <p>Once you remove a pet that is overheated move him to a cooler area
-        and take these emergency steps:</p>
-
-        <ol>
-          <li>Gradually lower the pet's body temperature by applying cool (not cold)
-            water all over their body or soaking them in a cool bath.
-
-          <li>Place cool, wet towels over the back of the neck, in the armpits,
-            and in the groin area. You may also wet the ear flaps and paws with
-            cool water. Direct a fan on the wet areas to speed evaporative
-            cooling.
-
-          <li>You may offer fresh, cool water if your pet is alert and wants to
-            drink. Do not force your pet to drink.
-        </ol>
-      </div>
-    </li>
-  </ul>
-</div>
-
-<nav>
+<nav id="call-button">
   <%=
     button_tag(type: "button", id: "call-button", class: "big-button") do
       content_tag(:strong, "Call for help")
